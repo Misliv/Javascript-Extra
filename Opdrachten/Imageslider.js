@@ -1,14 +1,14 @@
-var img[1, 2, 3, 4 ,5 ,6 ,7 ,8]
+var img = [1, 2, 3];
 var teller = 0;
 var slideholder = document.getElementById("slideholder")
-slideholder.style.backgroundImage = "url('imgEeveelutions/eevee1.png')";
+slideholder.style.backgroundImage = "url('../img/rock1.png')";
 
 slideholder.addEventListener("click", function () {
-    slideholder.style.backgroundImage = "url('imgEeveelutions/eevee" + getEevee() + ".png')";
+    slideholder.style.backgroundImage = "url('../img/rock" + getRock() + ".png')";
 });
 
-function getEevee() {
-    if(teller >= plaatjes.length) {
+function getRock() {
+    if(teller >= img.length) {
         teller = 1
     } else {
         teller++;
