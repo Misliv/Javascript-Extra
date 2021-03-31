@@ -1,12 +1,15 @@
-let Bedrag = "";
-let totaal = 0;
-let maanden = 12;
-var percentage = 10;
-
+let Bedrag;
+let Percentage;
+let Maanden;
+let Totaal;
+let Maandbedrag;
 
 function Bereken() {
-    var percent = (percentage / 100) * Bedrag;
-    totaal = parseInt(Bedrag) + parseInt(percent);
-    maanden = totaal /
+    Bedrag = document.getElementById("Bedrag").value;
+    Percentage = document.getElementById("Percentage").value;
+    Maanden = document.getElementById("Maand").value;
+    Totaal = (parseInt(Bedrag) + parseInt(Percentage) / 100) + parseInt(Bedrag);
+    Maandbedrag = Totaal / parseInt(Maanden);
+    document.getElementById("Maandbedrag").innerText = Maandbedrag;
 }
 
