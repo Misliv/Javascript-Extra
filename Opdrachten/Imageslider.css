@@ -1,6 +1,6 @@
 #slideholder {
     width: 471px;
     height: 472px;
-    border: 3px black solid;
-    transition: 2s;
+    border: 5px #101596 double;
+    transition: 1s;
 }
