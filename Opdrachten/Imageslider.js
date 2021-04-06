@@ -1,6 +1,6 @@
-var img = [1, 2, 3];
-var teller = 0;
-var slideholder = document.getElementById("slideholder")
+let img = [1, 2, 3];
+let teller = 0;
+let slideholder = document.getElementById("slideholder")
 slideholder.style.backgroundImage = "url('../img/rock1.png')";
 
 slideholder.addEventListener("click", function () {
